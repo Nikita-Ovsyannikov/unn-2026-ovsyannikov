@@ -1,0 +1,28 @@
+[project]
+name = "unn-2026-ovsyannikov"
+version = "0.1.0"
+requires-python = ">=3.14"
+dependencies = []
+
+[dependency-groups]
+dev = [
+    "ruff",
+    "mypy",
+]
+
+[tool.ruff.lint]
+select = [
+    "E",
+    "F",
+    "I",
+    "UP",
+    "B",
+    "SIM",
+    "ARG",
+]
+
+[tool.mypy]
+python_version = "3.14"
+strict = true
+explicit_package_bases = true
+packages = ["bot"]
